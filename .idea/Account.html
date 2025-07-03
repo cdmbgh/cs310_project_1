@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chad's Favorite Books</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        .carousel-inner img {
+            width: 100%; /* Set width to 100% */
+            margin: auto;
+            min-height:200px;
+        }
+
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="main_page">
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="/images/saw.png" alt ="Saw blade icon" id="saw_blade">
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Registration.html">Registration</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Account.html">Account</a></li>
+                <li><a href="Logout.html">Logout</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<form>
+    <label for="firstname">First Name:</label><br>
+    <input type="text" id="firstname" name="firstname"><br>
+    <label for="lastname">Last Name:</label><br>
+    <input type="text" id="lastname" name="lastname"><br>
+    <label for="adressline1">Address Line 1:</label><br>
+    <input type="text" id="adressline1" name="adressline1"><br>
+    <label for="adressline2">Address Line 2:</label><br>
+    <input type="text" id="adressline2" name="adressline2"><br>
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city"><br>
+    <label for="state">State:</label><br>
+    <select id="state" name="state">
+        <option value="Missouri">Missouri</option>
+        <option value="Illinois">Illinois</option>
+        <option value="Ohio">Ohio</option>
+        <option value="Other">Other, less important states</option>
+    </select><br>
+    <label for="zipcode">Zip Code:</label><br>
+    <input type="text" id="zipcode" name="zipcode"><br>
+    <label for="phonenumber">Phone Number:</label><br>
+    <input type="text" id="phonenumber" name="phonenumber"><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <input type="submit" value="Submit"><br>
+    <input type="reset" value="Reset">
+</form>
+
+<footer class="end_banner">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1&ab_channel=RickAstley"
+       target="_blank">Youtube </a>
+</footer>
+
+</body>
+</html>
